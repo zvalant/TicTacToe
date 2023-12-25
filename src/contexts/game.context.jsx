@@ -68,7 +68,7 @@ export const victoryCalculator = (positions)=>{
             let currentFValue = victoryHash.get("f");
             currentFValue++;
             victoryHash.set("f",currentFValue);
-        }else if (position ===2||position===4||position ===6){
+        }if (position ===2||position===4||position ===6){
             let currentBValue = victoryHash.get("b");
             currentBValue++
             victoryHash.set("b",currentBValue);
